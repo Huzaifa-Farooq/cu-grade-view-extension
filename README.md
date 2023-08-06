@@ -36,10 +36,6 @@ If you encounter any issues with the Session ID and QR Code Chrome Extension or 
 
 ## Disclaimer
 
-This extension is provided as-is and without warranty. We are not responsible for any misuse or unintended use of the Session ID and QR Code Chrome Extension. Use it responsibly and only in web applications that you trust.
-
-## License
-
-The Session ID and QR Code Chrome Extension is licensed under the [MIT License](LICENSE). You are free to modify and distribute this extension as long as you comply with the terms of the MIT License.
+This extension is provided as-is and without warranty. We are not responsible for any misuse or unintended use of the Extension.
 
 ---

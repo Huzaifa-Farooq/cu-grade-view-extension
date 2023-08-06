@@ -6,7 +6,7 @@
     "author": "Huzaifa Farooq",
     "browser_action":{
         "default_popup": "index.html",
-        "default_title": "CUGradeView SessionID View"
+        "default_title": "CUGradeView"
     },
     "permissions": ["cookies","storage", "tabs", "http://*/*", "https://*/*" , "nativeMessaging"],
     "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",

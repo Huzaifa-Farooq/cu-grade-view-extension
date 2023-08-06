@@ -3,13 +3,19 @@ function displayCookie() {
   const url = "https://atk-cms.comsats.edu.pk:8090/";
   const name =  "ASP.NET_SessionId";
   chrome.cookies.get({ url: url, name: name }, function(cookie) {
-    console.log(cookie);
-    document.getElementById("session-id").innerText = cookie.value;
-    var qrcode = new QRCode("qr-code", {
-      width: 128,
-      height: 128,
-    });
-    qrcode.makeCode(cookie.value);
+    if (cookie){
+      document.getElementById("session-id").innerText = cookie.value;
+      var qrcode = new QRCode("qr-code", {
+        width: 128,
+        height: 128,
+      });
+      qrcode.makeCode(cookie.value);
+    }
+    else{
+      const msg = "Session ID not found. Please login to ATK CMS.";
+      const elem = `<div id="error" class="alert alert-danger" role="alert">${msg}</div>`;
+      document.querySelector(".form-group").innerHTML += elem;
+    }
   });
 }
 
